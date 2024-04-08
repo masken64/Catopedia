@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Gilroy";
+  src:
+    local("Gilroy Black"),
+    local("Gilroy-Black"),
+    url("Gilroy-Black.woff2") format("woff2"),
+    url("Gilroy-Black.woff") format("woff"),
+    url("Gilroy-Black.ttf") format("truetype");
+}
+body {
+  background-color: #51545c;
+  color: white;
+  font-family: "Gilroy";
+
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.logo-image {
+  height: 7vh;
+  padding: 10px;
+}
+#header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  font-size: 20px;
+  position: sticky;
+  width: 99vw;
+}
+.l-header {
+  display: flex;
+  gap: 5vw;
+  align-items: center;
+}
+.r-header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.code {
+  font-weight: 300;
+  padding: 20px;
+  transition: 0.3s font-size;
+}
+#sb {
+  font-family: "Gilroy";
+  border-radius: 6px;
+  border: 1px transparent;
+  transition: 0.3s padding;
+}
+.logo,
+.home,
+.f-cats,
+.about {
+  cursor: pointer;
+  transition: 0.3s font-size;
+}
+.logo:hover,
+.home:hover,
+.f-cats:hover,
+.about:hover,
+.code:hover {
+  font-size: 22px;
+}
+
+#sb:focus{
+  border: 1px transparent;
+  padding: 7px;
+}
+
+#root{
+  background-color: #858992;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
