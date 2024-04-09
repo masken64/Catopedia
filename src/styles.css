@@ -8,10 +8,8 @@
     url("Gilroy-Black.ttf") format("truetype");
 }
 body {
-  background-color: #51545c;
   color: white;
   font-family: "Gilroy";
-
 }
 a {
   color: white;
@@ -51,29 +49,78 @@ a {
 }
 .logo,
 .home,
-.f-cats,
+.hof,
 .about {
   cursor: pointer;
   transition: 0.3s font-size;
 }
 .logo:hover,
 .home:hover,
-.f-cats:hover,
+.hof:hover,
 .about:hover,
 .code:hover {
   font-size: 22px;
 }
 
-#sb:focus{
+#sb:focus {
   border: 1px transparent;
   padding: 7px;
 }
 
-#root{
-  background-color: #858992;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+#root {
+  background-color: rgba(
+    107,
+    111,
+    119,
+    0.507
+  ); /* Semi-transparent background color */
+  backdrop-filter: blur(20px);
   border-radius: 20px;
-  border:1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  height: 94vh;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kitten-image {
+  height: 87vh;
+}
+
+.welmess {
+  font-size: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.home-text {
+  font-size: 40px;
+  padding: 5px;
+}
+.get-started {
+  font-size: 22px;
+  padding-top: 50px;
+}
+.sub-wel {
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.aboutus,
+p {
+  font-size: 26px;
+}
+
+.hofc {
+  text-align: center;
+  font-size: 20px;
 }
