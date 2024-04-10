@@ -4,6 +4,12 @@ import bg from "./assets/bg.svg";
 import loadHome from "./home.js";
 import loadAbout from "./about.js";
 import loadHall from "./halloffame.js";
+import searchBreed from "./searchBreed.js";
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  loadHome();
+});
 
 const logoDiv = document.querySelector(".logo");
 loadLogo(logoDiv);
@@ -25,3 +31,6 @@ about.addEventListener("click", loadAbout);
 
 const hof = document.querySelector(".hof");
 hof.addEventListener("click", loadHall);
+
+const sumbitF = document.querySelector("#sumbitF");
+sumbitF.addEventListener("submit",searchBreed);
