@@ -1,7 +1,10 @@
 # Catopedia
 
 Welcome to Catopedia, your ultimate guide to all things cat-related! This project utilizes the Cat API to provide a comprehensive database of feline information, including a random cat generator and a breed search option. With a library of over 60,000 cat images and detailed breed descriptions, you'll never run out of adorable cat content to explore.
+
+
 ![Catopedia Screenshot 1](https://i.imgur.com/uxN5sWI.png)
+
 ## Features
 
 ### Random Cat Generator
