@@ -3,9 +3,8 @@ import "./styles.css";
 import bg from "./assets/bg.svg";
 import loadHome from "./home.js";
 import loadAbout from "./about.js";
-import loadHall from "./halloffame.js";
 import searchBreed from "./searchBreed.js";
-
+import randomGen from "./randomGen.js";
 
 document.addEventListener("DOMContentLoaded", function(event) {
   loadHome();
@@ -30,7 +29,10 @@ const about = document.querySelector(".about");
 about.addEventListener("click", loadAbout);
 
 const hof = document.querySelector(".hof");
-hof.addEventListener("click", loadHall);
+hof.addEventListener("click", randomGen);
 
 const sumbitF = document.querySelector("#sumbitF");
 sumbitF.addEventListener("submit",searchBreed);
+
+const random = document.querySelector('.hof');
+random.addEventListener('click',randomGen);

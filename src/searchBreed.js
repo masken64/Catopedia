@@ -1,5 +1,5 @@
 import showResults from "./showResults";
-
+import oops from "./assets/oops.gif";
 async function searchBreed(event) {
     try {
         event.preventDefault();
@@ -16,8 +16,6 @@ async function searchBreed(event) {
         });
 
         const data = await response.json();
-        console.log(data);
-
         if (data.length > 0) {
             const breed = data[0];
             const breedName = breed.name;
@@ -30,7 +28,11 @@ async function searchBreed(event) {
             showResults(breedName, breedDesc, breedImage, breedOrigin, breedTemprament, wikiUrl, nick);
         } else {
             const content = document.querySelector('#content');
-            content.textContent = "Oops, we don't have information about that breed yet!";
+            const myoops = new Image();
+            myoops.src = oops;
+            myoops.classList.add('opsgif');
+            content.textContent = '';
+            content.appendChild(myoops);
         }
 
     } catch (err) {

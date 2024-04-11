@@ -12,12 +12,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       inject: "body",
+      favicon: './src/assets/logo.png',
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpg|jpeg)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
       {

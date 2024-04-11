@@ -181,3 +181,14 @@ p {
   max-height: 50vh;
   border-radius: 15px;
 }
+.opsgif,.gencat{
+  max-width: 50vw;
+  max-height: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gencat{
+  border-radius: 15px;
+}
